@@ -1,0 +1,418 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:100%;
+    padding:15px 0;
+
+    background:#c4cee4;
+}
+
+.nav-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:40px;
+    list-style:none;
+
+    margin:0;
+    padding:0;
+}
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:3rem;
+    letter-spacing:2px;
+}
+
+header p{
+    opacity:0.9;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h2{
+    font-size:2.5rem;
+    color:white;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+
+section{
+    padding:80px 0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#1e293b;
+    font-size:2rem;
+}
+
+/* About */
+
+.about{
+    background:white;
+}
+
+.about p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:15px;
+    font-size:1.05rem;
+}
+
+/* Skills */
+.skill{
+max-width:700px;
+margin:auto;
+}
+
+.skill p{
+margin:15px 0 5px;
+font-weight:600;
+}
+
+.progress{
+width:100%;
+background:#e5e7eb;
+border-radius:25px;
+overflow:hidden;
+margin-bottom:15px;
+}
+
+.progress-bar{
+height:28px;
+line-height:28px;
+text-align:right;
+padding-right:12px;
+color:white;
+font-weight:600;
+background:linear-gradient(90deg,#2563eb,#7c3aed);
+border-radius:25px;
+animation:grow 2s ease-out forwards;
+}
+
+.html{width:95%;}
+.css{width:90%;}
+.js{width:85%;}
+.git{width:80%;}
+.angular{width:75%;}
+.node{width:75%;}
+.react{width:80%;}
+.github{width:85%;}
+.java{width:80%;}
+.sql{width:75%;}
+.python{width:85%;}
+
+@keyframes grow{
+from{
+width:0;
+}
+}
+
+
+.skills{
+    background:#eef3ff;
+}
+
+.skill-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.8);
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+    padding:18px 30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    font-weight:600;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.05);
+    background:#2563eb;
+    color:white;
+}
+
+/* Projects */
+
+.projects{
+    background:white;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+}
+
+.project-card{
+    width:340px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(37,99,235,0.2);
+}
+
+.project-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:15px;
+}
+
+.project-card p{
+    padding:0 15px;
+}
+
+.project-btn{
+    display:inline-block;
+    margin:20px 15px;
+    padding:10px 20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.project-btn:hover{
+    background:#1d4ed8;
+}
+
+/* Contact */
+
+.contact{
+    background:#eef3ff;
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:1.05rem;
+}
+
+.contact a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+/* JavaScript Buttons */
+
+.hero-buttons{
+    margin-top:20px;
+}
+
+.toggle-btn{
+    margin:10px;
+    padding:12px 24px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+
+    background:white;
+    color:#2563eb;
+
+    font-size:1rem;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.toggle-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+#message{
+    margin-top:20px;
+    font-size:1.2rem;
+    font-weight:600;
+    color:white;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+   .navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #b5bcce;
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+
+    padding: 15px 0;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    gap: 40px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #60a5fa;
+}
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .project-card{
+        width:100%;
+    }
+
+}
+
+/* Dark Mode */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .about,
+.dark-mode .projects,
+.dark-mode .contact{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark-mode h2{
+    color:white;
+}
+
+.dark-mode .project-card{
+    background:#2a2a2a;
+    color:white;
+}
